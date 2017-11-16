@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+   <head>
+
+<title>Suggestion Box</title>
+<script type="text/javascript" src="js/vendor/angular.min.js"></script>
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/suggestion.css" rel="stylesheet" />
+<script src="https://code.angularjs.org/1.2.28/angular-route.min.js" type="text/javascript"></script>
+
+ </head>
+<body ng-app="SuggestionBox">
+	<div class="header">
+		<div class="container">
+			<img src="img/light.png" width="50" height="50"> Suggestion Box
+		</div>
+	</div>	
+
+<!-- Posts will Appear here -->
+<!--<div class="main" ng-controller="HomeController">-->
+  <div class="main">
+    <div class="container">
+
+      <div ng-view></div>
+
+  </div>
+</div>
+<!-- Modules -->
+<script type="text/javascript" src="js/app.js"></script>
+ 
+<!-- Controllers -->
+<script type="text/javascript" src="js/controllers/HomeController.js"></script>
+<script type="text/javascript" src="js/controllers/SuggestionController.js"></script>
+ 
+<!-- Services -->
+ <script type="text/javascript" src="js/services/suggestions.js"></script>
+
+  </body>
+</html>
